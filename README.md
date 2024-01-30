@@ -1,3 +1,6 @@
+Full Solution in [ProcessingCustomers Jupyter Notebook](https://github.com/pymaster9/2024-SPARC-Processing-Customers/blob/main/ProcessingCustomers.ipynb)
+
+## Writeup
 For this problem, I will assume that “efficiently” refers to maximizing the number of customers processed per minute and “fairly” refers to minimizing the difference between the small and large boxes' average wait time and minimizing the standard deviation of the time. I also assume that the cashier does not start with any customers, and they have to wait until their first customer to start processing customers. Finally, I will assume that the cashier knows the size of the boxes of each customer and the time they have been waiting.
 
 Based on this information, I created a Monte-Carlo simulation that would run a simulated version of this problem for 100 hours, allowing for the cashier to use different strategies. It is important to note that all simulations use the same random factors and the same random seed (31415926) to ensure that one strategy is not simply getting more favorable luck than another. I then created a function to find and display all relevant statistics: average time taken for customers with small and large boxes, standard deviations from the average time, and the number of customers processed per minute.
